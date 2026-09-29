@@ -27,6 +27,32 @@ the incidence matrix of the new blocks (all other constraints are invariant, so 
 member); see the header of `gen_ext.py`. Every CNF is solved by CaDiCaL with a DRAT proof, which is checked by
 drat-trim and, after conversion to LRAT, by cake_lpr.
 
+## Figures
+
+Regenerate with `python3 figures/make_figures.py` (matplotlib).
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="figures/coverings_dark.svg">
+  <img alt="Incidence matrices of the 18-block (17,8,3) covering and the 15-block (20,10,3) covering" src="figures/coverings_light.svg">
+</picture>
+
+Incidence matrices of the coverings in `coverings/` (rows: blocks, columns: points).
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="figures/links_dark.svg">
+  <img alt="Number of link classes per point-degree sequence: 185 classes for (17,8,3), 2132 for (20,10,3)" src="figures/links_light.svg">
+</picture>
+
+Link classes (optimal (16,7,2) coverings with 8 blocks; optimal (19,9,2) coverings with 7 blocks), grouped by the
+degree sequence of their points. One CNF per class.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="figures/instances_dark.svg">
+  <img alt="Distributions of CaDiCaL solve time and DRAT proof size per formula, for both cases" src="figures/instances_light.svg">
+</picture>
+
+Per-formula CaDiCaL solve time and DRAT proof size, from `runs/*/results.jsonl`.
+
 ## Contents
 
 | path | content |
@@ -38,6 +64,7 @@ drat-trim and, after conversion to LRAT, by cake_lpr.
 | `proofs/lb/`, `runs/lb_c16_7_2_*.log` | certificate for C(16,7,2) ≥ 8 |
 | `coverings/C17_8_3_b18.txt` | an 18-block (17,8,3) covering |
 | `coverings/C20_10_3_b15.txt` | the 15-block (20,10,3) covering listed in the La Jolla Covering Repository |
+| `figures/` | figures and the script that makes them |
 | `MANIFEST.sha256` | sha256 of every file |
 
 ## Reproduce
