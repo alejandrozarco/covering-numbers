@@ -7,6 +7,9 @@ The La Jolla Covering Repository (Zenodo record 19735294, v1.2, 2026-04-24) list
 14 ≤ C(20,10,3) ≤ 15. The computations here find no covering with 17 resp. 14 blocks, which together with the
 coverings in `coverings/` indicates C(17,8,3) = 18 and C(20,10,3) = 15.
 
+For C(17,8,3) see also J. Hartley and M. A. Olson, *The Covering Number C(17,8,3) = 18*, SSRN abstract 7537279
+(found 2026-09-29 after this computation was done; the two were obtained independently).
+
 ## Method (outline)
 
 For (v,k,b) = (17,8,17) resp. (20,10,14), counting forces every point into exactly r = 8 resp. 7 blocks, and the
