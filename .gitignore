@@ -1,0 +1,5 @@
+scripts/enum_links
+__pycache__/
+*.cnf
+*.drat
+*.lrat
