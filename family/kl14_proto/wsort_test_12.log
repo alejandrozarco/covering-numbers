@@ -1,0 +1,6 @@
+lex real 1101.24
+lex user 95.03
+lex sys 0.77
+wsort real 1771.68
+wsort user 764.60
+wsort sys 8.93

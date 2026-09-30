@@ -1,0 +1,33 @@
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+vars 2645 rows 5997
+MIP has 5997 rows; 2645 cols; 17001 nonzeros; 185 integer variables (185 binary)
+Coefficient ranges:
+  Matrix  [1e-01, 3e+02]
+  Cost    [0e+00, 0e+00]
+  Bound   [1e-01, 1e+00]
+  RHS     [1e-01, 3e+01]
+Presolving model
+5194 rows, 2309 cols, 14779 nonzeros 0s
+4690 rows, 2091 cols, 13561 nonzeros 0s
+Presolve reductions: rows 4690(-1307); columns 2091(-554); nonzeros 13561(-3440) 
+Objective function is integral with scale 1
+
+Solving MIP model with:
+   4690 rows
+   2091 cols (161 binary, 0 integer, 0 implied int., 1930 continuous, 0 domain fixed)
+   13561 nonzeros
+   Thread count 1 (of 10 threads). Using 1 max workers. Parallel search off
+
+Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   0               inf                  inf        0      0      0         0     0.2s
+         0       0         0   0.00%   0               inf                  inf        0      0      3      1863     0.5s
+         0       0         0   0.00%   0               inf                  inf     1449     32    390    126555    24.1s
+        91       1        36  12.91%   0               inf                  inf     1477     32    512    153302    29.2s

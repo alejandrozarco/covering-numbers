@@ -32,6 +32,18 @@ incidence matrix of the new blocks (all other constraints are invariant, so each
 member); see the header of `gen_ext.py`. Every CNF is solved by CaDiCaL with a DRAT proof, which is checked by
 drat-trim and, after conversion to LRAT, by cake_lpr.
 
+## The family $C(2m,m,3)$ (`family/`, added 2026-09-30)
+
+For $m \ge 4$ the Schönheim bound gives $C(2m,m,3) \ge 14$. `family/FAMILY.md` contains an argument that
+$C(2m,m,3) = 14$ iff $4 \mid m$, and that $C(2m,m,3) = 15$ for $m \ge 6$ with $4 \nmid m$, $m \ne 9$. The upper
+bounds are blow-ups of $\mathrm{AG}(3,2)$ and $\mathrm{PG}(3,2)$ (explicit coverings in `family/coverings/`). The lower bound
+reduces, by a written argument (`FAMILY.md` §1–§4), to a finite "Key Lemma" about $\tfrac12$-balanced 3-wise
+intersecting families of 7-subsets of a 14-set. The Key Lemma is checked by computer: 41 certificates
+(`family/kl_certs/`), each consisting of exact Farkas certificates for linear-arithmetic lemmas and a CNF refuted
+with a DRAT proof. `family/verify_kl.sh` re-checks everything from scratch (about 80 CPU minutes; tools via
+`$SAT_TOOLS` as above; `--full` also re-checks the direct $m = 9$ proof). Reviews of the argument and of the
+certificates are in `family/audit/`. The cases $m = 10, 11$ are also covered by the independent computations above.
+
 ## Figures
 
 Regenerate with `python3 figures/make_figures.py` (matplotlib).
@@ -72,6 +84,7 @@ Per-formula CaDiCaL solve time and DRAT proof size, from `runs/*/results.jsonl`.
 | `coverings/C20_10_3_b15.txt` | the 15-block $(20,10,3)$ covering listed in the La Jolla Covering Repository |
 | `coverings/C22_11_3_b15.txt` | a 15-block $(22,11,3)$ covering |
 | `figures/` | figures and the script that makes them |
+| `family/` | the $C(2m,m,3)$ argument, Key Lemma certificates, verifier, coverings, reviews |
 | `MANIFEST.sha256` | sha256 of every file |
 
 ## Reproduce

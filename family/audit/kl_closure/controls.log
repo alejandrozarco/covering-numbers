@@ -1,0 +1,10 @@
+[OK ] baseline_stub: VERIFY_KL: PASS; exit 0; FAIL lines: []
+[OK ] i_drop_cube: VERIFY_KL: FAIL; exit 1; FAIL lines: ['FAIL cell A14 covered by 34 cube certificates over 7 literals (every one of the 2^7 assignments lies in some cube)']
+[OK ] ii_a_relabel_xA9: VERIFY_KL: FAIL; exit 1; FAIL lines: ['FAIL cell A14 covered by 34 cube certificates over 7 literals (every one of the 2^7 assignments lies in some cube)']
+[OK ] ii_b_relabel_xA9_meta: VERIFY_KL: FAIL; exit 1; FAIL lines: ['FAIL klcheck A14_c11111: bd93/family/klcheck.py", line 75, in <module>', 'FAIL cell A14 covered by 34 cube certificates over 7 literals (every one of the 2^7 assignments lies in some cube)']
+[OK ] iii_baseline_real_c11111: VERIFY_KL: PASS; exit 0; FAIL lines: []
+[OK ] iii_farkas_multiplier: VERIFY_KL: FAIL; exit 1; FAIL lines: ['FAIL klcheck A14_c11111: ing-designs/.claude/worktrees/brave-jones-3cbd93/family/klcheck.py", line 71, in <module>', 'FAIL cell A14 covered by 34 cube certificates over 7 literals (every one of the 2^7 assignments lies in some cube)']
+[OK ] iv_a_add_contradictory_cube: VERIFY_KL: FAIL; exit 1; FAIL lines: ['FAIL cell A14: a cube repeats a literal']
+[OK ] iv_b_replace_by_contradictory_cube: VERIFY_KL: FAIL; exit 1; FAIL lines: ['FAIL cell A14: a cube repeats a literal']
+[OK ] iv_c_cube_contradicting_base: VERIFY_KL: FAIL; exit 1; FAIL lines: ['FAIL cell A14 covered by 35 cube certificates over 8 literals (every one of the 2^8 assignments lies in some cube)']
+CONTROLS: ALL AS EXPECTED

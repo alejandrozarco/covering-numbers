@@ -1,0 +1,4 @@
+cube p03=1 p04=1: R=12 case=t1 UNSAT 320.7s lemmas=3621 checks=16847 user 34.78 
+cube p03=1 p04=0: R=12 case=t1 UNSAT 81.4s lemmas=4584 checks=14611 user 38.50 
+cube p03=0 p04=1: R=12 case=t1 UNSAT 82.9s lemmas=4433 checks=15007 user 40.43 
+cube p03=0 p04=0: R=12 case=t1 UNSAT 177.2s lemmas=8225 checks=24538 user 79.80 

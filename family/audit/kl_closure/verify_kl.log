@@ -1,0 +1,140 @@
+PASS cnflib self-test
+PASS klcheck A14_c00000_00: PASS <tmp>/tmpuuzkcn0v/A14_c00000_00 [cube [[['p', 0, 3], 0], [['p', 0, 4], 0], [['p', 0, 5], 0], [['p', 0, 6], 0], [['p', 0, 7], 0], [['p', 0, 8], 0], [['p', 0, 9], 0]]]: 63705 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c00000_00 assigned to manifest cell ['A14']
+PASS A14_c00000_00 UNSAT proof checked
+PASS klcheck A14_c00000_01: PASS <tmp>/tmpp5ypiad_/A14_c00000_01 [cube [[['p', 0, 3], 0], [['p', 0, 4], 0], [['p', 0, 5], 0], [['p', 0, 6], 0], [['p', 0, 7], 0], [['p', 0, 8], 0], [['p', 0, 9], 1]]]: 23736 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c00000_01 assigned to manifest cell ['A14']
+PASS A14_c00000_01 UNSAT proof checked
+PASS klcheck A14_c00000_10: PASS <tmp>/tmpmulq8yci/A14_c00000_10 [cube [[['p', 0, 3], 0], [['p', 0, 4], 0], [['p', 0, 5], 0], [['p', 0, 6], 0], [['p', 0, 7], 0], [['p', 0, 8], 1], [['p', 0, 9], 0]]]: 21968 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c00000_10 assigned to manifest cell ['A14']
+PASS A14_c00000_10 UNSAT proof checked
+PASS klcheck A14_c00000_11: PASS <tmp>/tmpyte8dyvu/A14_c00000_11 [cube [[['p', 0, 3], 0], [['p', 0, 4], 0], [['p', 0, 5], 0], [['p', 0, 6], 0], [['p', 0, 7], 0], [['p', 0, 8], 1], [['p', 0, 9], 1]]]: 16164 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c00000_11 assigned to manifest cell ['A14']
+PASS A14_c00000_11 UNSAT proof checked
+PASS klcheck A14_c00001: PASS <tmp>/tmpxv4wf1w1/A14_c00001 [cube [[['p', 0, 3], 0], [['p', 0, 4], 0], [['p', 0, 5], 0], [['p', 0, 6], 0], [['p', 0, 7], 1]]]: 75604 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c00001 assigned to manifest cell ['A14']
+PASS A14_c00001 UNSAT proof checked
+PASS klcheck A14_c00010: PASS <tmp>/tmpgqqnhyvx/A14_c00010 [cube [[['p', 0, 3], 0], [['p', 0, 4], 0], [['p', 0, 5], 0], [['p', 0, 6], 1], [['p', 0, 7], 0]]]: 46067 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c00010 assigned to manifest cell ['A14']
+PASS A14_c00010 UNSAT proof checked
+PASS klcheck A14_c00011: PASS <tmp>/tmp2bnuu2uy/A14_c00011 [cube [[['p', 0, 3], 0], [['p', 0, 4], 0], [['p', 0, 5], 0], [['p', 0, 6], 1], [['p', 0, 7], 1]]]: 29069 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c00011 assigned to manifest cell ['A14']
+PASS A14_c00011 UNSAT proof checked
+PASS klcheck A14_c00100: PASS <tmp>/tmpx272278_/A14_c00100 [cube [[['p', 0, 3], 0], [['p', 0, 4], 0], [['p', 0, 5], 1], [['p', 0, 6], 0], [['p', 0, 7], 0]]]: 37173 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c00100 assigned to manifest cell ['A14']
+PASS A14_c00100 UNSAT proof checked
+PASS klcheck A14_c00101: PASS <tmp>/tmpomihr2_z/A14_c00101 [cube [[['p', 0, 3], 0], [['p', 0, 4], 0], [['p', 0, 5], 1], [['p', 0, 6], 0], [['p', 0, 7], 1]]]: 17933 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c00101 assigned to manifest cell ['A14']
+PASS A14_c00101 UNSAT proof checked
+PASS klcheck A14_c00110: PASS <tmp>/tmphs_ql2ee/A14_c00110 [cube [[['p', 0, 3], 0], [['p', 0, 4], 0], [['p', 0, 5], 1], [['p', 0, 6], 1], [['p', 0, 7], 0]]]: 20359 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c00110 assigned to manifest cell ['A14']
+PASS A14_c00110 UNSAT proof checked
+PASS klcheck A14_c00111: PASS <tmp>/tmprit4ucm7/A14_c00111 [cube [[['p', 0, 3], 0], [['p', 0, 4], 0], [['p', 0, 5], 1], [['p', 0, 6], 1], [['p', 0, 7], 1]]]: 2860 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c00111 assigned to manifest cell ['A14']
+PASS A14_c00111 UNSAT proof checked
+PASS klcheck A14_c01000: PASS <tmp>/tmp5votg1hw/A14_c01000 [cube [[['p', 0, 3], 0], [['p', 0, 4], 1], [['p', 0, 5], 0], [['p', 0, 6], 0], [['p', 0, 7], 0]]]: 66839 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c01000 assigned to manifest cell ['A14']
+PASS A14_c01000 UNSAT proof checked
+PASS klcheck A14_c01001: PASS <tmp>/tmpecadkyf5/A14_c01001 [cube [[['p', 0, 3], 0], [['p', 0, 4], 1], [['p', 0, 5], 0], [['p', 0, 6], 0], [['p', 0, 7], 1]]]: 45605 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c01001 assigned to manifest cell ['A14']
+PASS A14_c01001 UNSAT proof checked
+PASS klcheck A14_c01010: PASS <tmp>/tmpyrob6kkm/A14_c01010 [cube [[['p', 0, 3], 0], [['p', 0, 4], 1], [['p', 0, 5], 0], [['p', 0, 6], 1], [['p', 0, 7], 0]]]: 23258 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c01010 assigned to manifest cell ['A14']
+PASS A14_c01010 UNSAT proof checked
+PASS klcheck A14_c01011: PASS <tmp>/tmp1rz6cjx7/A14_c01011 [cube [[['p', 0, 3], 0], [['p', 0, 4], 1], [['p', 0, 5], 0], [['p', 0, 6], 1], [['p', 0, 7], 1]]]: 4314 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c01011 assigned to manifest cell ['A14']
+PASS A14_c01011 UNSAT proof checked
+PASS klcheck A14_c01100: PASS <tmp>/tmps5_z4t0z/A14_c01100 [cube [[['p', 0, 3], 0], [['p', 0, 4], 1], [['p', 0, 5], 1], [['p', 0, 6], 0], [['p', 0, 7], 0]]]: 31465 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c01100 assigned to manifest cell ['A14']
+PASS A14_c01100 UNSAT proof checked
+PASS klcheck A14_c01101: PASS <tmp>/tmp9s4zi8sw/A14_c01101 [cube [[['p', 0, 3], 0], [['p', 0, 4], 1], [['p', 0, 5], 1], [['p', 0, 6], 0], [['p', 0, 7], 1]]]: 4480 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c01101 assigned to manifest cell ['A14']
+PASS A14_c01101 UNSAT proof checked
+PASS klcheck A14_c01110: PASS <tmp>/tmp4pt4rhoa/A14_c01110 [cube [[['p', 0, 3], 0], [['p', 0, 4], 1], [['p', 0, 5], 1], [['p', 0, 6], 1], [['p', 0, 7], 0]]]: 5957 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c01110 assigned to manifest cell ['A14']
+PASS A14_c01110 UNSAT proof checked
+PASS klcheck A14_c01111: PASS <tmp>/tmp8tu8icmn/A14_c01111 [cube [[['p', 0, 3], 0], [['p', 0, 4], 1], [['p', 0, 5], 1], [['p', 0, 6], 1], [['p', 0, 7], 1]]]: 1027 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c01111 assigned to manifest cell ['A14']
+PASS A14_c01111 UNSAT proof checked
+PASS klcheck A14_c10000: PASS <tmp>/tmpzheo2zni/A14_c10000 [cube [[['p', 0, 3], 1], [['p', 0, 4], 0], [['p', 0, 5], 0], [['p', 0, 6], 0], [['p', 0, 7], 0]]]: 102504 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c10000 assigned to manifest cell ['A14']
+PASS A14_c10000 UNSAT proof checked
+PASS klcheck A14_c10001: PASS <tmp>/tmpwgvjcmwj/A14_c10001 [cube [[['p', 0, 3], 1], [['p', 0, 4], 0], [['p', 0, 5], 0], [['p', 0, 6], 0], [['p', 0, 7], 1]]]: 59127 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c10001 assigned to manifest cell ['A14']
+PASS A14_c10001 UNSAT proof checked
+PASS klcheck A14_c10010: PASS <tmp>/tmpt08brjsn/A14_c10010 [cube [[['p', 0, 3], 1], [['p', 0, 4], 0], [['p', 0, 5], 0], [['p', 0, 6], 1], [['p', 0, 7], 0]]]: 33706 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c10010 assigned to manifest cell ['A14']
+PASS A14_c10010 UNSAT proof checked
+PASS klcheck A14_c10011: PASS <tmp>/tmp5bftr72t/A14_c10011 [cube [[['p', 0, 3], 1], [['p', 0, 4], 0], [['p', 0, 5], 0], [['p', 0, 6], 1], [['p', 0, 7], 1]]]: 8742 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c10011 assigned to manifest cell ['A14']
+PASS A14_c10011 UNSAT proof checked
+PASS klcheck A14_c10100: PASS <tmp>/tmpue9u3xjw/A14_c10100 [cube [[['p', 0, 3], 1], [['p', 0, 4], 0], [['p', 0, 5], 1], [['p', 0, 6], 0], [['p', 0, 7], 0]]]: 41296 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c10100 assigned to manifest cell ['A14']
+PASS A14_c10100 UNSAT proof checked
+PASS klcheck A14_c10101: PASS <tmp>/tmp2fessy2c/A14_c10101 [cube [[['p', 0, 3], 1], [['p', 0, 4], 0], [['p', 0, 5], 1], [['p', 0, 6], 0], [['p', 0, 7], 1]]]: 14014 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c10101 assigned to manifest cell ['A14']
+PASS A14_c10101 UNSAT proof checked
+PASS klcheck A14_c10110: PASS <tmp>/tmpkgfmmm6_/A14_c10110 [cube [[['p', 0, 3], 1], [['p', 0, 4], 0], [['p', 0, 5], 1], [['p', 0, 6], 1], [['p', 0, 7], 0]]]: 3868 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c10110 assigned to manifest cell ['A14']
+PASS A14_c10110 UNSAT proof checked
+PASS klcheck A14_c10111: PASS <tmp>/tmpf3wbym20/A14_c10111 [cube [[['p', 0, 3], 1], [['p', 0, 4], 0], [['p', 0, 5], 1], [['p', 0, 6], 1], [['p', 0, 7], 1]]]: 527 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c10111 assigned to manifest cell ['A14']
+PASS A14_c10111 UNSAT proof checked
+PASS klcheck A14_c11000: PASS <tmp>/tmpy8zz9zed/A14_c11000 [cube [[['p', 0, 3], 1], [['p', 0, 4], 1], [['p', 0, 5], 0], [['p', 0, 6], 0], [['p', 0, 7], 0]]]: 74911 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c11000 assigned to manifest cell ['A14']
+PASS A14_c11000 UNSAT proof checked
+PASS klcheck A14_c11001: PASS <tmp>/tmpeicmdkku/A14_c11001 [cube [[['p', 0, 3], 1], [['p', 0, 4], 1], [['p', 0, 5], 0], [['p', 0, 6], 0], [['p', 0, 7], 1]]]: 15779 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c11001 assigned to manifest cell ['A14']
+PASS A14_c11001 UNSAT proof checked
+PASS klcheck A14_c11010: PASS <tmp>/tmpcaj3fo5d/A14_c11010 [cube [[['p', 0, 3], 1], [['p', 0, 4], 1], [['p', 0, 5], 0], [['p', 0, 6], 1], [['p', 0, 7], 0]]]: 13876 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c11010 assigned to manifest cell ['A14']
+PASS A14_c11010 UNSAT proof checked
+PASS klcheck A14_c11011: PASS <tmp>/tmp8z0kw786/A14_c11011 [cube [[['p', 0, 3], 1], [['p', 0, 4], 1], [['p', 0, 5], 0], [['p', 0, 6], 1], [['p', 0, 7], 1]]]: 1397 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c11011 assigned to manifest cell ['A14']
+PASS A14_c11011 UNSAT proof checked
+PASS klcheck A14_c11100: PASS <tmp>/tmp30zkcdjz/A14_c11100 [cube [[['p', 0, 3], 1], [['p', 0, 4], 1], [['p', 0, 5], 1], [['p', 0, 6], 0], [['p', 0, 7], 0]]]: 13040 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c11100 assigned to manifest cell ['A14']
+PASS A14_c11100 UNSAT proof checked
+PASS klcheck A14_c11101: PASS <tmp>/tmpigktorgk/A14_c11101 [cube [[['p', 0, 3], 1], [['p', 0, 4], 1], [['p', 0, 5], 1], [['p', 0, 6], 0], [['p', 0, 7], 1]]]: 943 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c11101 assigned to manifest cell ['A14']
+PASS A14_c11101 UNSAT proof checked
+PASS klcheck A14_c11110: PASS <tmp>/tmptbc8p26i/A14_c11110 [cube [[['p', 0, 3], 1], [['p', 0, 4], 1], [['p', 0, 5], 1], [['p', 0, 6], 1], [['p', 0, 7], 0]]]: 2144 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c11110 assigned to manifest cell ['A14']
+PASS A14_c11110 UNSAT proof checked
+PASS klcheck A14_c11111: PASS <tmp>/tmpgwpzyyut/A14_c11111 [cube [[['p', 0, 3], 1], [['p', 0, 4], 1], [['p', 0, 5], 1], [['p', 0, 6], 1], [['p', 0, 7], 1]]]: 326 theory lemmas (exact Farkas) + base CNF (56057 clauses) reproduced
+PASS A14_c11111 assigned to manifest cell ['A14']
+PASS A14_c11111 UNSAT proof checked
+PASS klcheck B14: PASS <tmp>/tmpgi2178az/B14: 2821 theory lemmas (exact Farkas) + base CNF (53410 clauses) reproduced
+PASS B14 assigned to manifest cell ['B']
+PASS B14 UNSAT proof checked
+PASS klcheck xA10: PASS <tmp>/tmp0u3mtwo7/xA10: 779 theory lemmas (exact Farkas) + base CNF (25355 clauses) reproduced
+PASS xA10 assigned to manifest cell ['A10']
+PASS xA10 UNSAT proof checked
+PASS klcheck xA11: PASS <tmp>/tmpeolnhx_3/xA11: 6436 theory lemmas (exact Farkas) + base CNF (31278 clauses) reproduced
+PASS xA11 assigned to manifest cell ['A11']
+PASS xA11 UNSAT proof checked
+PASS klcheck xA12: PASS <tmp>/tmp3ijl1fid/xA12: 8737 theory lemmas (exact Farkas) + base CNF (38141 clauses) reproduced
+PASS xA12 assigned to manifest cell ['A12']
+PASS xA12 UNSAT proof checked
+PASS klcheck xA13: PASS <tmp>/tmpb06hnsl8/xA13: 96315 theory lemmas (exact Farkas) + base CNF (46234 clauses) reproduced
+PASS xA13 assigned to manifest cell ['A13']
+PASS xA13 UNSAT proof checked
+PASS klcheck xA9: PASS <tmp>/tmpz7ovwu7l/xA9: 108 theory lemmas (exact Farkas) + base CNF (20208 clauses) reproduced
+PASS xA9 assigned to manifest cell ['A9']
+PASS xA9 UNSAT proof checked
+PASS cell B covered by monolithic certificate B14
+PASS cell A9 covered by monolithic certificate xA9
+PASS cell A10 covered by monolithic certificate xA10
+PASS cell A11 covered by monolithic certificate xA11
+PASS cell A12 covered by monolithic certificate xA12
+PASS cell A13 covered by monolithic certificate xA13
+PASS cell A14 covered by 35 cube certificates over 7 literals (every one of the 2^7 assignments lies in some cube)
+PASS direct m=5: stored CNF regenerated clause-for-clause by gen_direct.py
+PASS direct m=5: UNSAT proof checked
+PASS direct m=6: stored CNF regenerated clause-for-clause by gen_direct.py
+PASS direct m=6: UNSAT proof checked
+PASS direct m=7: stored CNF regenerated clause-for-clause by gen_direct.py
+PASS direct m=7: UNSAT proof checked
+PASS direct m=9: stored CNF regenerated clause-for-clause by gen_direct.py
+PASS direct m=9: UNSAT proof checked
+VERIFY_KL: PASS

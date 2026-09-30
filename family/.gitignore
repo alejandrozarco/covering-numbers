@@ -1,0 +1,11 @@
+smt/
+cnf/
+*.dylib
+*.pid
+__pycache__/
+proofs/*.drat*
+proofs/*.lrat*
+ks/*.cnf
+ks/*.json
+ks/*.drat*
+ks/*.lrat*

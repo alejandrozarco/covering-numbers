@@ -1,0 +1,6 @@
+(a) PASS - relabelled s=9 certificate does not cover A14
+(b) PASS - contradictory lone cube passes klcheck but does not cover A14
+
+(c0) PASS - the complete A14 cube set covers A14
+(c) PASS - A14 without sub-cube c00000_01 is rejected
+(d) PASS - an extra duplicate cube (overlap) is harmless: cell still covered

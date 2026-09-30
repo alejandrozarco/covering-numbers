@@ -1,0 +1,87 @@
+ok   A14_c00000_00: cell ['A14'], cube=True
+ok   A14_c00000_01: cell ['A14'], cube=True
+ok   A14_c00000_10: cell ['A14'], cube=True
+ok   A14_c00000_11: cell ['A14'], cube=True
+ok   A14_c00001: cell ['A14'], cube=True
+ok   A14_c00010: cell ['A14'], cube=True
+ok   A14_c00011: cell ['A14'], cube=True
+ok   A14_c00100: cell ['A14'], cube=True
+ok   A14_c00101: cell ['A14'], cube=True
+ok   A14_c00110: cell ['A14'], cube=True
+ok   A14_c00111: cell ['A14'], cube=True
+ok   A14_c01000: cell ['A14'], cube=True
+ok   A14_c01001: cell ['A14'], cube=True
+ok   A14_c01010: cell ['A14'], cube=True
+ok   A14_c01011: cell ['A14'], cube=True
+ok   A14_c01100: cell ['A14'], cube=True
+ok   A14_c01101: cell ['A14'], cube=True
+ok   A14_c01110: cell ['A14'], cube=True
+ok   A14_c01111: cell ['A14'], cube=True
+ok   A14_c10000: cell ['A14'], cube=True
+ok   A14_c10001: cell ['A14'], cube=True
+ok   A14_c10010: cell ['A14'], cube=True
+ok   A14_c10011: cell ['A14'], cube=True
+ok   A14_c10100: cell ['A14'], cube=True
+ok   A14_c10101: cell ['A14'], cube=True
+ok   A14_c10110: cell ['A14'], cube=True
+ok   A14_c10111: cell ['A14'], cube=True
+ok   A14_c11000: cell ['A14'], cube=True
+ok   A14_c11001: cell ['A14'], cube=True
+ok   A14_c11010: cell ['A14'], cube=True
+ok   A14_c11011: cell ['A14'], cube=True
+ok   A14_c11100: cell ['A14'], cube=True
+ok   A14_c11101: cell ['A14'], cube=True
+ok   A14_c11110: cell ['A14'], cube=True
+ok   A14_c11111: cell ['A14'], cube=True
+ok   B14: cell ['B'], cube=False
+ok   xA10: cell ['A10'], cube=False
+ok   xA11: cell ['A11'], cube=False
+ok   xA12: cell ['A12'], cube=False
+ok   xA13: cell ['A13'], cube=False
+ok   xA9: cell ['A9'], cube=False
+ok   cell B: 1 certs, monolithic=['B14']
+ok   cell A9: 1 certs, monolithic=['xA9']
+ok   cell A10: 1 certs, monolithic=['xA10']
+ok   cell A11: 1 certs, monolithic=['xA11']
+ok   cell A12: 1 certs, monolithic=['xA12']
+ok   cell A13: 1 certs, monolithic=['xA13']
+ok   cell A14: 35 certs, monolithic=[]
+ok   A14: 35 cubes over K=[('p', 0, 3), ('p', 0, 4), ('p', 0, 5), ('p', 0, 6), ('p', 0, 7), ('p', 0, 8), ('p', 0, 9)]: all 2^7 assignments covered (uncovered=0)
+info A14 cube volume sum = 128 vs 2^|K| = 128 (equal and covered => partition)
+info fresh A14 base: 56057 clauses, sha256(repr) 28e22f13188d63ca
+ok   A14_c00000_00: base block == fresh A14 base (28e22f13188d63ca), 7 cube units, 63705 lemma clauses, nothing else
+ok   A14_c00000_01: base block == fresh A14 base (28e22f13188d63ca), 7 cube units, 23736 lemma clauses, nothing else
+ok   A14_c00000_10: base block == fresh A14 base (28e22f13188d63ca), 7 cube units, 21968 lemma clauses, nothing else
+ok   A14_c00000_11: base block == fresh A14 base (28e22f13188d63ca), 7 cube units, 16164 lemma clauses, nothing else
+ok   A14_c00001: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 75604 lemma clauses, nothing else
+ok   A14_c00010: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 46067 lemma clauses, nothing else
+ok   A14_c00011: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 29069 lemma clauses, nothing else
+ok   A14_c00100: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 37173 lemma clauses, nothing else
+ok   A14_c00101: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 17933 lemma clauses, nothing else
+ok   A14_c00110: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 20359 lemma clauses, nothing else
+ok   A14_c00111: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 2860 lemma clauses, nothing else
+ok   A14_c01000: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 66839 lemma clauses, nothing else
+ok   A14_c01001: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 45605 lemma clauses, nothing else
+ok   A14_c01010: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 23258 lemma clauses, nothing else
+ok   A14_c01011: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 4314 lemma clauses, nothing else
+ok   A14_c01100: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 31465 lemma clauses, nothing else
+ok   A14_c01101: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 4480 lemma clauses, nothing else
+ok   A14_c01110: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 5957 lemma clauses, nothing else
+ok   A14_c01111: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 1027 lemma clauses, nothing else
+ok   A14_c10000: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 102504 lemma clauses, nothing else
+ok   A14_c10001: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 59127 lemma clauses, nothing else
+ok   A14_c10010: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 33706 lemma clauses, nothing else
+ok   A14_c10011: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 8742 lemma clauses, nothing else
+ok   A14_c10100: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 41296 lemma clauses, nothing else
+ok   A14_c10101: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 14014 lemma clauses, nothing else
+ok   A14_c10110: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 3868 lemma clauses, nothing else
+ok   A14_c10111: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 527 lemma clauses, nothing else
+ok   A14_c11000: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 74911 lemma clauses, nothing else
+ok   A14_c11001: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 15779 lemma clauses, nothing else
+ok   A14_c11010: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 13876 lemma clauses, nothing else
+ok   A14_c11011: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 1397 lemma clauses, nothing else
+ok   A14_c11100: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 13040 lemma clauses, nothing else
+ok   A14_c11101: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 943 lemma clauses, nothing else
+ok   A14_c11110: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 2144 lemma clauses, nothing else
+ok   A14_c11111: base block == fresh A14 base (28e22f13188d63ca), 5 cube units, 326 lemma clauses, nothing else
+INDEP_CHECK: PASS

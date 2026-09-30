@@ -1,0 +1,4 @@
+R=14 case=t2 UNSAT 674.3s lemmas=222225 checks=392816
+ks/cert_B14: 222225 lemmas certified
+ks/cert_B14: 222225 theory lemmas verified with exact Farkas certificates; base CNF (39400 clauses) reproduced
+{"cnf": "ks/cert_B14.cnf", "cnf_sha256": "4984cbf3833f543ed47c887f30746774cf366b4a88fbb083f5ccbfa1e478138b", "solve_s": 195.4, "status": "UNSATISFIABLE", "drat_bytes": 398104638, "drat_sha256": "fc265914bba171a132da7527a42469d3c1654d4657d254eaabafd4f6bddff70c", "drat_trim": "VERIFIED", "drat_trim_s": 499.45, "cake_lpr": "s VERIFIED UNSAT", "cake_lpr_s": 20.5, "lrat_bytes": 220823177}

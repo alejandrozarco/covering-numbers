@@ -1,0 +1,5 @@
+*.cnf
+*.raw.json
+*.cert.json
+*.drat*
+*.lrat*
