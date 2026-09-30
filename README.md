@@ -1,5 +1,7 @@
 # Covering numbers $C(17,8,3)$, $C(20,10,3)$ and $C(22,11,3)$: computation and certificates
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23063930.svg)](https://doi.org/10.5281/zenodo.23063930)
+
 Status: **computational results, not peer reviewed.** First published 2026-09-29; $C(22,11,3)$ added 2026-09-30.
 
 $C(v,k,t)$ is the minimum number of $k$-subsets (blocks) of a $v$-set such that every $t$-subset lies in some block.
@@ -43,6 +45,11 @@ intersecting families of 7-subsets of a 14-set. The Key Lemma is checked by comp
 with a DRAT proof. `family/verify_kl.sh` re-checks everything from scratch (about 80 CPU minutes; tools via
 `$SAT_TOOLS` as above; `--full` also re-checks the direct $m = 9$ proof). Reviews of the argument and of the
 certificates are in `family/audit/`. The cases $m = 10, 11$ are also covered by the independent computations above.
+
+## Archive
+
+Release v2 is archived at Zenodo: [doi:10.5281/zenodo.23063930](https://doi.org/10.5281/zenodo.23063930)
+(all versions: [doi:10.5281/zenodo.23063929](https://doi.org/10.5281/zenodo.23063929)).
 
 ## Figures
 
