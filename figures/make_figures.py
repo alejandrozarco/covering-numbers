@@ -17,7 +17,9 @@ THEMES = {
                  axis="#383835", empty="#262624", mark="#3987e5"),
 }
 CASES = [("C17_8_3", "(17,8,3)", 17, "runs/C17_8_3_b17/results.jsonl", "data/links_16_7.json", "coverings/C17_8_3_b18.txt"),
-         ("C20_10_3", "(20,10,3)", 20, "runs/C20_10_3_b14/results.jsonl", "data/links_19_9.json", "coverings/C20_10_3_b15.txt")]
+         ("C20_10_3", "(20,10,3)", 20, "runs/C20_10_3_b14/results.jsonl", "data/links_19_9.json", "coverings/C20_10_3_b15.txt"),
+         ("C22_11_3", "(22,11,3)", 22, "runs/C22_11_3_b14/results.jsonl", "data/links_21_10.json", "coverings/C22_11_3_b15.txt")]
+N = len(CASES)
 
 
 def style(ax, t):
@@ -30,7 +32,7 @@ def style(ax, t):
 
 
 def fig_coverings(t, name):
-    fig, axes = plt.subplots(1, 2, figsize=(10, 4.6), gridspec_kw=dict(width_ratios=[17, 20]))
+    fig, axes = plt.subplots(1, N, figsize=(5 * N, 4.6), gridspec_kw=dict(width_ratios=[c[2] for c in CASES]))
     fig.patch.set_facecolor(t["surface"])
     for ax, (_, label, v, _, _, cov) in zip(axes, CASES):
         B = [sorted(map(int, l.split())) for l in open(os.path.join(ROOT, cov)) if l.strip()]
@@ -53,7 +55,7 @@ def fig_coverings(t, name):
 
 
 def fig_instances(t, name):
-    fig, axes = plt.subplots(2, 2, figsize=(10, 5.6))
+    fig, axes = plt.subplots(2, N, figsize=(5 * N, 5.6))
     fig.patch.set_facecolor(t["surface"])
     for col, (_, label, _, res, _, _) in enumerate(CASES):
         R = [json.loads(l) for l in open(os.path.join(ROOT, res))]
@@ -76,7 +78,7 @@ def fig_instances(t, name):
 
 
 def fig_links(t, name):
-    fig, axes = plt.subplots(1, 2, figsize=(10, 3.8), gridspec_kw=dict(width_ratios=[4, 8]))
+    fig, axes = plt.subplots(1, N, figsize=(5 * N, 3.8))
     fig.patch.set_facecolor(t["surface"])
     for ax, (_, label, v, _, links, _) in zip(axes, CASES):
         d = json.load(open(os.path.join(ROOT, links)))
