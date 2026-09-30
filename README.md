@@ -46,6 +46,11 @@ with a DRAT proof. `family/verify_kl.sh` re-checks everything from scratch (abou
 `$SAT_TOOLS` as above; `--full` also re-checks the direct $m = 9$ proof). Reviews of the argument and of the
 certificates are in `family/audit/`. The cases $m = 10, 11$ are also covered by the independent computations above.
 
+## New upper bounds (`upper/`, added 2026-09-30)
+
+Two coverings found by weighted blow-ups of finite geometries, each two blocks smaller than the best listed on
+coveringrepository.com: $C(45,23,5) \le 63$ (was 65) and $C(44,24,6) \le 126$ (was 128). See `upper/README.md`.
+
 ## Archive
 
 Release v2 is archived at Zenodo: [doi:10.5281/zenodo.23063930](https://doi.org/10.5281/zenodo.23063930)
@@ -92,6 +97,7 @@ Per-formula CaDiCaL solve time and DRAT proof size, from `runs/*/results.jsonl`.
 | `coverings/C22_11_3_b15.txt` | a 15-block $(22,11,3)$ covering |
 | `figures/` | figures and the script that makes them |
 | `family/` | the $C(2m,m,3)$ argument, Key Lemma certificates, verifier, coverings, reviews |
+| `upper/` | new coverings for $C(45,23,5)$ and $C(44,24,6)$, blow-up scan |
 | `MANIFEST.sha256` | sha256 of every file |
 
 ## Reproduce
