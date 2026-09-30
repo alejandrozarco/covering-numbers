@@ -58,7 +58,8 @@ Let μ be a probability distribution on a 3-wise intersecting family F ⊂ ([14]
 with all marginals ½.
 
 **Lemma 3.1** S ≠ T ∈ F ⇒ |S∩T| ≥ 3.  *Proof.* H = S∩T meets every member, and |U∩H| = |H| for
-U ∈ {S,T}.  Σ_U μ_U|U∩H| = |H|/2 (marginals), hence |H|/2 − 1 ≥ (μ_S+μ_T)(|H|−1) > 0 unless |H| ≥ 3. ∎
+U ∈ {S,T}.  Σ_U μ_U|U∩H| = |H|/2 (marginals), hence |H|/2 − 1 ≥ (μ_S+μ_T)(|H|−1).  For |H| ≤ 2 the left side is ≤ 0 and the right side ≥ 0, with
+equality on the left only for |H| = 2, where the right side is > 0; so |H| ≥ 3. ∎
 
 **Lemma 3.2** μ_S ≤ 1/8 for all S; equality iff every other member meets S in exactly 3 points.
 *Proof.* 7/2 = Σ_T μ_T|S∩T| ≥ 7μ_S + 3(1−μ_S). ∎  (In the finite problem: multiplicities ≤ m/4.)
@@ -173,7 +174,7 @@ compare the base CNF with independent Python predicates (0 mismatches).
 patterns of the literals p_{0,3},…,p_{0,7} (|S_0∩S_k| ≥ 4 for rows k = 3..7); the hardest cube 00000 was
 refined further on p_{0,8}, p_{0,9} into 4 sub-cubes, giving 35 cube certificates (31 + 4) over 7 literals.
 The cubes cover the models of the base CNF (every assignment satisfies some cube), so certificates for all 35
-(each: base CNF + its 5 unit clauses + its own lemma clauses, every lemma with its own exact Farkas
+(each: base CNF + its cube unit clauses (5, or 7 for the 4 refined cubes) + its own lemma clauses, every lemma with its own exact Farkas
 certificate, UNSAT by DRAT/LRAT) certify the cell; `verify_kl.py` checks that every assignment of
 the cube literals lies in some cube (hard cubes may be refined further into sub-cubes).  Lemmas learned in one cube are valid theory lemmas for the base
 formula (each certificate depends only on the lemma's own literal set, never on the cube), so newly started cubes are *seeded* with the
