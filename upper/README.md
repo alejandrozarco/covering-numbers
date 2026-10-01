@@ -1,5 +1,8 @@
 # New upper bounds from weighted blow-ups of finite geometries
 
+Status: AI-produced, not peer reviewed; see [`AI_DISCLOSURE.md`](../AI_DISCLOSURE.md). Each covering is checked by
+`scripts/check_covering.py`.
+
 | covering | best previously listed (coveringrepository.com, 2026-09-30) | construction |
 |---|---|---|
 | `C45_23_5_b63.txt` — $C(45,23,5) \le 63$ | 65 (J. de Heer, S. Muir, 2014) | 45 of the 63 points of $\mathrm{PG}(5,2)$, chosen so that every hyperplane contains at most 23 of them; blocks = the 63 hyperplanes (padded to 23 points) |

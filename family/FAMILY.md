@@ -2,22 +2,26 @@
 
 Status date: 2026-09-30 (Key Lemma certified, commit 5fbc22b).  All paths relative to `family/`.
 
+Status: AI-produced written argument plus computer-checked certificates, not peer reviewed; no human expert has
+checked it. See [`AI_DISCLOSURE.md`](../AI_DISCLOSURE.md). Below, "written argument" means a hand-style argument
+written by an AI model and reviewed only by AI models; "certified" means checked by the software listed there.
+
 ## 0. Summary
 
 | statement | status |
 |---|---|
-| (R) for m ≥ 4: C(2m,m,3) = 14 ⇔ ∃ multiset of 2m 7-subsets of [14], any three sharing an element, every element in exactly m of them | **proved** (§1) |
-| (U14) 4 \| m ⇒ C(2m,m,3) = 14 (blow-up of SQS(8)) | **proved** (§2) |
-| (Rel) balanced relaxation: \|S∩T\| ≥ 3, μ(S) ≤ 1/8, SQS(8)-dual characterisation | **proved** (§3) |
-| (Red) Key Lemma ⇒ [C(2m,m,3) = 14 ⇔ 4 \| m] for every m ≥ 4 | **proved** (§4) |
+| (R) for m ≥ 4: C(2m,m,3) = 14 ⇔ ∃ multiset of 2m 7-subsets of [14], any three sharing an element, every element in exactly m of them | **written argument** (§1) |
+| (U14) 4 \| m ⇒ C(2m,m,3) = 14 (blow-up of SQS(8)) | **written argument** (§2) |
+| (Rel) balanced relaxation: \|S∩T\| ≥ 3, μ(S) ≤ 1/8, SQS(8)-dual characterisation | **written argument** (§3) |
+| (Red) Key Lemma ⇒ [C(2m,m,3) = 14 ⇔ 4 \| m] for every m ≥ 4 | **written argument** (§4) |
 | (KL) every ½-balanced 3-wise intersecting family of 7-subsets of [14] contains an SQS(8)-dual | **certified** (§5.4: 41 certificates, 1 038 979 exact Farkas lemmas; `verify_kl.sh` PASS) |
 | C(2m,m,3) ≥ 15 directly for m = 5,6,7,9 (and m = 10, session 1) | **certified** (DRAT; drat-trim + cake_lpr) (§6) |
-| (U15) C(2m,m,3) ≤ 15 for every m ≥ 6, m ≠ 9 (blow-up of PG(3,2)) | **proved** (§7) |
+| (U15) C(2m,m,3) ≤ 15 for every m ≥ 6, m ≠ 9 (blow-up of PG(3,2)) | **written argument** (§7) |
 | C(18,9,3) ∈ {15,16} | open (§7.3) |
 | t = 4 (dropped for now): reduction, AG(4,2)/PG(4,2) constructions | partial (§8) |
 
 Consequence (KL + §4 + §7): **C(2m,m,3) = 14 iff 4 | m (m ≥ 4); C(2m,m,3) = 15 for every m ≥ 6 with
-4 ∤ m, m ≠ 9; C(18,9,3) ∈ {15,16}; C(10,5,3) = 17 (LJCR).**  This settles all LJCR entries
+4 ∤ m, m ≠ 9; C(18,9,3) ∈ {15,16}; C(10,5,3) = 17 (LJCR).**  If correct, this settles all LJCR entries
 C(2m,m,3) ∈ [14,15] (m = 10,11,13,14,15,17,…; all = 15) and raises the LJCR lower bound of
 C(18,9,3) from 14 to 15 (also certified directly, §6).
 

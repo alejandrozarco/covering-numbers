@@ -2,7 +2,16 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23063930.svg)](https://doi.org/10.5281/zenodo.23063930)
 
-Status: **computational results, not peer reviewed.** First published 2026-09-29; $C(22,11,3)$ added 2026-09-30.
+Status: **computational certificates, not peer reviewed.** First published 2026-09-29; $C(22,11,3)$, `family/` and
+`upper/` added 2026-09-30. **Produced by AI models** under the direction of the repository owner; see
+[`AI_DISCLOSURE.md`](AI_DISCLOSURE.md).
+
+> [!IMPORTANT]
+> This repository contains AI-produced **warrants**: computer-checked results that no human has digested. They are
+> warrants for $C(17,8,3) = 18$, $C(20,10,3) = 15$ and $C(22,11,3) = 15$, for the statement on the family $C(2m,m,3)$ in
+> `family/`, and for the coverings in `upper/`. We do not regard these values as settled by it. We welcome a
+> human-readable treatment, and credit for a proof belongs to whoever writes one. Questions, checks and corrections:
+> [GitHub issues](https://github.com/alejandrozarco/covering-numbers/issues).
 
 $C(v,k,t)$ is the minimum number of $k$-subsets (blocks) of a $v$-set such that every $t$-subset lies in some block.
 The La Jolla Covering Repository (Zenodo record 19735294, v1.2, 2026-04-24) lists $17 \le C(17,8,3) \le 18$,
@@ -36,7 +45,7 @@ drat-trim and, after conversion to LRAT, by cake_lpr.
 
 ## The family $C(2m,m,3)$ (`family/`, added 2026-09-30)
 
-For $m \ge 4$ the Schönheim bound gives $C(2m,m,3) \ge 14$. `family/FAMILY.md` contains an argument that
+For $m \ge 4$ the Schönheim bound gives $C(2m,m,3) \ge 14$. `family/FAMILY.md` contains an argument (AI-produced, not peer reviewed) that
 $C(2m,m,3) = 14$ iff $4 \mid m$, and that $C(2m,m,3) = 15$ for $m \ge 6$ with $4 \nmid m$, $m \ne 9$. The upper
 bounds are blow-ups of $\mathrm{AG}(3,2)$ and $\mathrm{PG}(3,2)$ (explicit coverings in `family/coverings/`). The lower bound
 reduces, by a written argument (`FAMILY.md` §1–§4), to a finite "Key Lemma" about $\tfrac12$-balanced 3-wise
