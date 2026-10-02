@@ -203,6 +203,10 @@ d90713afaeaa0e1239a3858dff49854f0f87809f936b1514d65c8375bb783e2a  ./family/lpcor
 d754437388f6f4e63835659f0cf32e51f0078f86c091f89ffca69be4cd202daf  ./family/neg_controls.py
 f11743c800369d483fcee445314ee1163f00261e48b05a8a565b6ef4e01e32e4  ./family/pg32.py
 c4ad6d04d67ae9670d3d03d478e40b88c2bb18b85d972e8f8e6ace46d6d83025  ./family/pgblow.py
+8f475044a7c063073720b8d12b2362f4545dd1fc6cab8417ec2d2e7ddaa31340  ./family/proofs/direct_m5.cnf
+1f6d5685649b5b3e42eb02c2cafaf2b21ebac7ae1cfe0cdf01a6d2d0026a9e1b  ./family/proofs/direct_m6.cnf
+5b7ff11851303c1726c45d9216e32d0486afead0b2e35788f79d6f40e71950be  ./family/proofs/direct_m7.cnf
+e77f3ea845f08a9f601c82c7de53335b0950fe1e35a73c76fe5c26ce91d23b92  ./family/proofs/direct_m9.cnf
 4aa848bbf26d92813e1e8afa4d119d892e4e23fb0123b1aa7be8f3888aed37c0  ./family/prove.py
 fecae13f2453e23f7abc4695178fb2dea42d235f1cd98c111e5958a161efb6c4  ./family/prove_lrat.py
 36fd52d06d91f4c2d930187b6e51332c16e11df15e74d7ba3a5332675643d734  ./family/run_Asub.sh

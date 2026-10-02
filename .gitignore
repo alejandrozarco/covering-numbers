@@ -3,3 +3,4 @@ __pycache__/
 *.cnf
 *.drat
 *.lrat
+!family/proofs/direct_m*.cnf
