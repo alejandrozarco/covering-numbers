@@ -107,7 +107,15 @@ Per-formula CaDiCaL solve time and DRAT proof size, from `runs/*/results.jsonl`.
 | `figures/` | figures and the script that makes them |
 | `family/` | the $C(2m,m,3)$ argument, Key Lemma certificates, verifier, coverings, reviews |
 | `upper/` | new coverings for $C(45,23,5)$ and $C(44,24,6)$, blow-up scan |
+| `LICENSE` | Apache License 2.0 |
 | `MANIFEST.sha256` | sha256 of every file |
+
+## Licence
+
+Apache License 2.0 (`LICENSE`) for the whole repository: code, certificates, data and text. Not covered:
+`coverings/C20_10_3_b15.txt` is the covering listed in the La Jolla Covering Repository (D. M. Gordon), included for
+reference under that repository's terms. The tools named under Reproduce (CaDiCaL, drat-trim, cake_lpr, nauty/pynauty)
+are not included and keep their own licences.
 
 ## Reproduce
 
