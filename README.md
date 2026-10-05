@@ -7,10 +7,13 @@ Status: **computational certificates, not peer reviewed.** First published 2026-
 [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md).
 
 > [!IMPORTANT]
-> This repository contains AI-produced **warrants**: computer-checked results that no human has digested. They are
-> warrants for $C(17,8,3) = 18$, $C(20,10,3) = 15$ and $C(22,11,3) = 15$, for the statement on the family $C(2m,m,3)$ in
-> `family/`, and for the coverings in `upper/`. We do not regard these values as settled by it. We welcome a
-> human-readable treatment, and credit for a proof belongs to whoever writes one. Questions, checks and corrections:
+> This repository is a public, timestamped, AI-produced **warrant** for $C(17,8,3) = 18$, $C(20,10,3) = 15$ and
+> $C(22,11,3) = 15$ (bounds listed in the La Jolla Covering Repository, Zenodo record 19735294), for the statement on
+> the family $C(2m,m,3)$ in `family/`, and for the coverings in `upper/`: machine-checked arguments that no human has
+> yet digested. We do not regard these questions as settled by it. Independent verification and human-readable
+> expositions are welcome, and credit for a human-readable proof belongs to whoever writes one. To refer to the
+> computational results, please cite the archived repository
+> ([doi:10.5281/zenodo.23063929](https://doi.org/10.5281/zenodo.23063929)). Questions, checks and corrections:
 > [GitHub issues](https://github.com/alejandrozarco/covering-numbers/issues).
 
 $C(v,k,t)$ is the minimum number of $k$-subsets (blocks) of a $v$-set such that every $t$-subset lies in some block.
