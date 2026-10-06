@@ -1,0 +1,24 @@
+# Cross-check of data/links_21_10.json (made with genbg) by an independent enumeration (scripts/enum_links.c +
+# scripts/classify_links.py), matched class by class with nauty certificates. Excerpt of the referee-bundle
+# verification log of 2026-09-30 (drat-trim 2e3b2dc, cake_lpr a36874a).
+[a] PASS C22_11_3 links (21,10,2;7): stored JSON sha256 -- b8a697447c96f7cd
+[a] PASS C22_11_3 links (21,10,2;7): 11241 classes (stored classification made with genbg)
+[a] PASS C22_11_3 links (21,10,2;7): every representative is a 2-(21,10,1) covering, 7 distinct blocks
+[a] SKIP C22_11_3 links (21,10,2;7): orbit-stabiliser identity -- not applicable to the genbg file; checked on the enum_links rebuild, which is matched to it by nauty
+[a] PASS C22_11_3 links (21,10,2;7): representatives pairwise non-isomorphic (nauty)
+    rebuilding C22_11_3 links (21,10,2;7) (recorded cost ~20 min on one core) ...
+leaves 10603932
+[a] PASS C22_11_3 links (21,10,2;7): rebuilt enumeration (enum_links.c), 262 s -- raw sha256 03e486071fdb776b
+    lines 10603932, classes 11241, orbit-stabiliser OK for 11241/11241
+      degseq (4, 4, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3) : 6518
+      degseq (5, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3) : 3703
+      degseq (5, 5, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3) : 728
+      degseq (5, 5, 5, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3) : 47
+      degseq (6, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3) : 182
+      degseq (6, 5, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3) : 54
+      degseq (6, 5, 5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3) : 3
+      degseq (6, 6, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3) : 1
+      degseq (7, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3) : 4
+      degseq (7, 5, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3) : 1
+[a] PASS C22_11_3 links (21,10,2;7): rebuild: orbit-stabiliser identity for every class, leaves sum to total -- 11241 classes, 10603932 leaves, 3654 s
+[a] PASS C22_11_3 links (21,10,2;7): rebuild matches data/links_21_10.json up to isomorphism (nauty, one-to-one) -- 11241 vs 11241 classes

@@ -22,9 +22,10 @@ $14 \le C(20,10,3) \le 15$ and $14 \le C(22,11,3) \le 15$. The computations here
 blocks, which together with the coverings in `coverings/` indicates $C(17,8,3) = 18$, $C(20,10,3) = 15$ and
 $C(22,11,3) = 15$.
 
-For $C(17,8,3)$ see also the title "The Covering Number C(17,8,3) = 18" (J. Hartley and M. A. Olson), listed without a
-link on https://www.jonathanhartley.net/research as of 2026-09-29 (found after this computation was done; the two were
-obtained independently).
+For $C(17,8,3)$ see also "The Covering Number C(17,8,3) = 18" by J. Hartley and M. A. Olson, listed on
+https://www.jonathanhartley.net/research (seen 2026-09-29; as of 2026-10-06 marked as an SSRN working paper, which
+we have not located). We learned of it after this computation was done; the two results were obtained
+independently.
 
 ## Method (outline)
 
@@ -33,9 +34,16 @@ and the blocks through a point (point removed) form an optimal $`2\text{-}(v-1,k
 ($C(16,7,2) = 8$, $C(19,9,2) = 7$, $C(21,10,2) = 7$). `scripts/counting.py` checks the arithmetic for the first two;
 for the third, $11 \cdot 14 = 22 \cdot 7$ and $C(21,10,2) \ge \lceil 21 \cdot 3/10 \rceil = 7$ (Schönheim).
 `proofs/lb/` certifies $C(16,7,2) \ge 8$.
-These link coverings are classified up to isomorphism (`scripts/enum_links.c`, `scripts/classify_links.py`,
-nauty via pynauty): 185 classes for $(16,7,2)$ with 8 blocks, 2132 classes for $(19,9,2)$ with 7 blocks,
-11241 classes for $(21,10,2)$ with 7 blocks (`data/links_*.json`).
+These link coverings are classified up to isomorphism: 185 classes for $(16,7,2)$ with 8 blocks, 2132 classes for
+$(19,9,2)$ with 7 blocks, 11241 classes for $(21,10,2)$ with 7 blocks (`data/links_*.json`). The first two
+classifications were made with `scripts/enum_links.c` and `scripts/classify_links.py` (nauty via pynauty). The third
+was made with nauty's `genbg` (`scripts/genbg_links.py`), which lists the bipartite block–point incidence graphs with
+7 blocks of degree 10 and 21 points of degree at least 3 in which every two points have a common block (`-Y1`), each
+exactly once up to isomorphism. Degree at least 3 is forced: a point must meet the other 20 points in blocks of 9
+further points. `runs/links_21_10/genbg_run.log` records the command (10 s) and reproduces `data/links_21_10.json`
+byte for byte. As a cross-check, the `enum_links.c` pipeline rebuilds the same 11241 classes, matched one to one with
+nauty certificates (`runs/links_21_10/enum_links_crosscheck.log`), and an independent classifier written for the
+audit agrees as well.
 For each class, `scripts/gen_ext.py` writes a CNF for the remaining blocks with the link of a root point fixed.
 Root choice: let $M$ be the maximum pair degree $\lambda(pq)$ of a hypothetical covering and
 $`\mu(p) = \#\{q : \lambda(pq) = M\}`$; take as root a point maximising $\mu$. Since $\lambda(pq)$ is the degree of
@@ -99,9 +107,10 @@ Per-formula CaDiCaL solve time and DRAT proof size, from `runs/*/results.jsonl`.
 
 | path | content |
 |---|---|
-| `scripts/` | generator and driver (`run_case.py`), covering checker (`check_covering.py`) |
+| `scripts/` | generator and driver (`run_case.py`), covering checker (`check_covering.py`), link classifiers (`enum_links.c` + `classify_links.py`; `genbg_links.py`) |
 | `data/links_16_7.json`, `data/links_19_9.json`, `data/links_21_10.json` | link classifications (class representatives + automorphism generators) |
 | `runs/*/results.jsonl` | one row per class: CNF sha256, solver status, proof sha256, checker verdicts |
+| `runs/links_21_10/` | genbg run record and the enum_links cross-check for the $(21,10,2)$ classification |
 | `proofs/C17_8_3_b17/`, `proofs/C20_10_3_b14/`, `proofs/C22_11_3_b14/` | DRAT proofs (xz), one per class |
 | `proofs/lb/`, `runs/lb_c16_7_2_*.log` | certificate for $C(16,7,2) \ge 8$ |
 | `coverings/C17_8_3_b18.txt` | an 18-block $(17,8,3)$ covering |
@@ -137,6 +146,8 @@ SAT_TOOLS=/path/to/tools python3 scripts/run_case.py 17 8 17 8 --proof     # 185
 SAT_TOOLS=/path/to/tools python3 scripts/run_case.py 20 10 14 7 --proof    # 2132 classes, ~10 min
 SAT_TOOLS=/path/to/tools python3 scripts/run_case.py 22 11 14 7 --proof    # 11241 classes, ~45 min
 # to also redo the link classification, delete data/links_16_7.json / data/links_19_9.json / data/links_21_10.json first
+# (21,10,2) with genbg (nauty 2.9.3), as recorded in runs/links_21_10/genbg_run.log:
+genbg -q -Y1 -d10:3 -D10:7 7 21 70:70 > links_21_10.g6 && python3 scripts/genbg_links.py 21 10 7 2 3 data/links_21_10.json --from links_21_10.g6
 ```
 
 To check a stored proof directly: `xz -dk proofs/C17_8_3_b17/e0.drat.xz`, regenerate the CNF for class 0 with
