@@ -68,8 +68,10 @@ certificates are in `family/audit/`. The cases $m = 10, 11$ are also covered by 
 
 ## New upper bounds (`upper/`, added 2026-09-30)
 
-Two coverings found by weighted blow-ups of finite geometries, each two blocks smaller than the best listed on
-coveringrepository.com: $C(45,23,5) \le 63$ (was 65) and $C(44,24,6) \le 126$ (was 128). See `upper/README.md`.
+Coverings found by weighted blow-ups of finite geometries, each smaller than the best listed on coveringrepository.com:
+$C(45,23,5) \le 63$ (was 65) and $C(44,24,6) \le 126$ (was 128), added 2026-09-30; $C(54,19,4) \le 121$ (128),
+$C(55,19,4) \le 121$ (131), $C(65,23,4) \le 121$ (128), $C(69,24,4) \le 121$ (125), $C(64,14,3) \le 156$ (162),
+$C(76,16,3) \le 156$ (167) and $C(95,20,3) \le 155$ (160), added 2026-10-07. See `upper/README.md`.
 
 ## Archive
 
@@ -118,7 +120,7 @@ Per-formula CaDiCaL solve time and DRAT proof size, from `runs/*/results.jsonl`.
 | `coverings/C22_11_3_b15.txt` | a 15-block $(22,11,3)$ covering |
 | `figures/` | figures and the script that makes them |
 | `family/` | the $C(2m,m,3)$ argument, Key Lemma certificates, verifier, coverings, reviews |
-| `upper/` | new coverings for $C(45,23,5)$ and $C(44,24,6)$, blow-up scan |
+| `upper/` | new coverings from weighted blow-ups (9 parameter sets), scans, builder, review |
 | `LICENSE` | Apache License 2.0 |
 | `MANIFEST.sha256` | sha256 of every file |
 
