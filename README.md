@@ -1,6 +1,6 @@
 # Covering numbers $C(17,8,3)$, $C(20,10,3)$ and $C(22,11,3)$: computation and certificates
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23063930.svg)](https://doi.org/10.5281/zenodo.23063930)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23063929.svg)](https://doi.org/10.5281/zenodo.23063929)
 
 Status: **computational certificates, not peer reviewed.** First published 2026-09-29; $C(22,11,3)$, `family/` and
 `upper/` added 2026-09-30. **Produced by AI models** under the direction of the repository owner; see
@@ -75,7 +75,7 @@ $C(76,16,3) \le 156$ (167) and $C(95,20,3) \le 155$ (160), added 2026-10-07. See
 
 ## Archive
 
-Release v2 is archived at Zenodo: [doi:10.5281/zenodo.23063930](https://doi.org/10.5281/zenodo.23063930)
+Release v3 is archived at Zenodo: [doi:10.5281/zenodo.23218565](https://doi.org/10.5281/zenodo.23218565)
 (all versions: [doi:10.5281/zenodo.23063929](https://doi.org/10.5281/zenodo.23063929)).
 
 ## Figures
