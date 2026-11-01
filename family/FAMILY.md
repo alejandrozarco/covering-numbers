@@ -17,7 +17,7 @@ written by an AI model and reviewed only by AI models; "certified" means checked
 | (KL) every ½-balanced 3-wise intersecting family of 7-subsets of [14] contains an SQS(8)-dual | **certified** (§5.4: 41 certificates, 1 038 979 exact Farkas lemmas; `verify_kl.sh` PASS) |
 | C(2m,m,3) ≥ 15 directly for m = 5,6,7,9 (and m = 10, session 1) | **certified** (DRAT; drat-trim + cake_lpr) (§6) |
 | (U15) C(2m,m,3) ≤ 15 for every m ≥ 6, m ≠ 9 (blow-up of PG(3,2)) | **written argument** (§7) |
-| C(18,9,3) ∈ {15,16} | open (§7.3) |
+| C(18,9,3) ∈ {15,16} | from this argument; a separate computation indicates 16, proofs not kept (§7.3, `../m9/README.md`) |
 | t = 4 (dropped for now): reduction, AG(4,2)/PG(4,2) constructions | partial (§8) |
 
 Consequence (KL + §4 + §7): **C(2m,m,3) = 14 iff 4 | m (m ≥ 4); C(2m,m,3) = 15 for every m ≥ 6 with
@@ -238,7 +238,9 @@ exists for m = 9.  15 blocks ⇔ a multiset of 18 subsets of [15], 3-wise inters
 ≤ 9 of them (sizes ≥ 7, pairwise ∩ ≥ 3); direct SAT search (`gen_direct.py 9 --b 15 --rmin 7 --cmax`)
 did not finish in ~15 min; a normalised version (`gen_b15.py`: a size-7 row and a |∩|=3 partner of size
 s1 = 7..11 fixed; valid since Σ sizes ≤ 135 < 8·18 and Σ_q λ_pq ≤ 56 < 4·17) was run for 1 h per case
-without result; later work in `../m9/`; open.
+without result.  Later work (`../m9/`, another method, added 2026-11-01): an exhaustive computation finds no 15-block
+covering, which indicates C(18,9,3) = 16.  Its proofs were not kept and its evidence is weaker than the rest of this
+file; see `../m9/README.md`.  The argument in this file gives only C(18,9,3) ∈ {15,16}.
 
 ## 8. t = 4: C(2m,m,4) and 30 blocks
 

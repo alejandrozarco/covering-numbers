@@ -14,7 +14,9 @@ line.
   - a referee report on the written argument and the encoders (`family/audit/referee/REPORT.md`): Claude Fable 5.1
     (Anthropic);
   - two reviews of the family argument and certificates (`family/audit/astra_report.md`, `astra2_report.md`):
-    gpt-6-astra (OpenAI, via the Codex CLI).
+    gpt-6-astra (OpenAI, via the Codex CLI);
+  - two reviews of the $C(18,9,3)$ computation (`m9/audit/`): gpt-6-astra and Claude Fable 5.1, the second written
+    before reading the first. Neither could check a proof, because the proofs were not kept.
 - The commits carry a `Co-Authored-By: Claude Opus 5.5` trailer.
 
 **Reviews.** The AI reviews found real errors, all fixed:
@@ -27,14 +29,20 @@ line.
   justified in `FAMILY.md` §5.2;
 - under-argued steps (duplicate-row model, double-lex symmetry breaking, the $10^{-5}$ weight bound), an inexact
   inequality in Lemma 3.1, a wrong cube count, a definition that did not match its use, and text that claimed more,
-  or less, than was checked at the time.
+  or less, than was checked at the time;
+- in `m9/`, the cube-and-conquer verifier skipped failed results on restart and did not bind stored results to their
+  inputs, and the controls detected very little (an intentionally broken generator passed them); the verifier was
+  corrected and a stronger control added. These defects show no sign of having affected a result, but stored
+  results from before the correction cannot be re-derived from the logs alone (`m9/README.md`).
 
 AI reviews are not peer review, and no human expert has checked this work. In the terminology of the Lean community
 these are *warrants*, not human-readable proofs (see the note at the top of `README.md`).
 
 **What is checked by software**
-- Every unsatisfiability claim has a DRAT proof checked by drat-trim and, after conversion to LRAT, by cake_lpr, a
-  checker whose correctness is a machine-checked theorem (CakeML/HOL4).
+- Every unsatisfiability claim outside `m9/` has a DRAT proof checked by drat-trim and, after conversion to LRAT, by
+  cake_lpr, a checker whose correctness is a machine-checked theorem (CakeML/HOL4).
+- In `m9/` the proofs were checked by such tools and then deleted. **The repository holds records of those checks, not the
+  proofs**, so this part cannot be checked in the same way.
 - `scripts/check_covering.py` checks every stored covering (every $t$-subset in some block).
 - `family/verify_kl.sh` re-checks the 41 Key Lemma certificates: the exact Farkas certificates for the
   linear-arithmetic lemmas in rational arithmetic, the case split and cube coverage, and the DRAT/LRAT refutations.
@@ -44,4 +52,5 @@ What remains to be trusted:
   classifications (nauty), the symmetry breaking, and the reduction in `FAMILY.md` §1–§4 from the Key Lemma to the
   family statement;
 - that each CNF encodes what its generator's documentation says it encodes;
-- the toolchain: nauty/pynauty, CaDiCaL only through its proofs, and the compiled cake_lpr binary.
+- the toolchain: nauty/pynauty, CaDiCaL only through its proofs, and the compiled cake_lpr binary;
+- for `m9/`, additionally: the run records, and the AI-authored scripts that wrote them.

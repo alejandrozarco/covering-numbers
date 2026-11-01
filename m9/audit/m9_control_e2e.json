@@ -1,0 +1,87 @@
+{
+ "objects": 86,
+ "stat": {
+  "root on uncovered triple": 1543,
+  "sa no object": 121,
+  "SAT": 86,
+  "type full": 50
+ },
+ "failures": [],
+ "types": {
+  "(6, 4, 4, 3, 3)": 30,
+  "(4, 4, 4, 4, 4)": 2,
+  "(6, 5, 3, 3, 3)": 28,
+  "(5, 4, 4, 4, 3)": 19,
+  "(5, 5, 4, 3, 3)": 7
+ },
+ "cases": 24,
+ "classes": 21,
+ "with_exclusion": 3,
+ "stab_nontrivial": 86,
+ "mutants": {
+  "rows ordered ascending": {
+   "killed": 3,
+   "tried": 3
+  },
+  "aut lex reversed": {
+   "killed": 3,
+   "tried": 3
+  },
+  "degree >= 8": {
+   "killed": 3,
+   "tried": 3
+  },
+  "block size 10": {
+   "killed": 3,
+   "tried": 3
+  },
+  "q degree 8": {
+   "killed": 3,
+   "tried": 3
+  },
+  "X degree >= 9": {
+   "killed": 3,
+   "tried": 33
+  },
+  "N >= 12": {
+   "killed": 3,
+   "tried": 3
+  },
+  "pair degree >= 4": {
+   "killed": 3,
+   "tried": 3
+  },
+  "O max too small": {
+   "killed": 3,
+   "tried": 3
+  },
+  "O count one less": {
+   "killed": 3,
+   "tried": 3
+  },
+  "O 6-with-5 on all types": {
+   "killed": 3,
+   "tried": 79
+  },
+  "O degree guard dropped": {
+   "killed": 3,
+   "tried": 3
+  },
+  "triple also needs a second block": {
+   "killed": 3,
+   "tried": 3
+  },
+  "link point labels off by one": {
+   "killed": 3,
+   "tried": 3
+  },
+  "full Aut instead of stabiliser": {
+   "killed": 3,
+   "tried": 31
+  },
+  "wrong case for the object": {
+   "killed": 86,
+   "tried": 86
+  }
+ }
+}

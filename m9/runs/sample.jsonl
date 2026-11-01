@@ -1,0 +1,5 @@
+{"case": 115, "class": 28, "q": 4, "nond7": [1, 2, 3], "gen": "--n7 --root", "cnf_sha256": "12bcd00f8b0fe00773f7085bd5d9e6b8347134af9c6a89e4441aca12b804fa26", "wall_s": 9.1, "status": "UNSATISFIABLE"}
+{"case": 187, "class": 46, "q": 7, "nond7": [1, 2, 3, 4, 5, 6], "gen": "--n7 --root", "cnf_sha256": "7291738bd671b08af5dccbd19a45a63deeafcd31353f381145150ea7f051c1c0", "wall_s": 34.05, "status": "UNSATISFIABLE"}
+{"case": 173, "class": 43, "q": 1, "nond7": [], "gen": "--n7 --root", "cnf_sha256": "89dafe0c80f2c03b00fc8da7a811a20e1632d560e524d93b4a3d0f87bbe61621", "wall_s": 4.97, "status": "UNSATISFIABLE"}
+{"case": 739, "class": 163, "q": 8, "nond7": [1, 2, 3, 4, 5, 6, 7, 10, 11], "gen": "--n7 --root", "cnf_sha256": "6cd83537439b91f8b91872d2ccdda07b6b29d32f41553e74477fcc4365766687", "wall_s": 4.62, "status": "UNSATISFIABLE"}
+{"case": 346, "class": 84, "q": 1, "nond7": [], "gen": "--n7 --root", "cnf_sha256": "1a964e7430993f479e3f18cbb744ab33137d9a3bca8478570db3fad769cb7465", "wall_s": 6.88, "status": "UNSATISFIABLE"}

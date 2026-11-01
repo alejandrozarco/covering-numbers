@@ -1,15 +1,16 @@
-# Covering numbers $C(17,8,3)$, $C(20,10,3)$ and $C(22,11,3)$: computation and certificates
+# Covering numbers $C(17,8,3)$, $C(20,10,3)$, $C(22,11,3)$ and the family $C(2m,m,3)$: computation and certificates
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23063929.svg)](https://doi.org/10.5281/zenodo.23063929)
 
 Status: **computational certificates, not peer reviewed.** First published 2026-09-29; $C(22,11,3)$, `family/` and
-`upper/` added 2026-09-30. **Produced by AI models** under the direction of the repository owner; see
+`upper/` added 2026-09-30; `m9/` added 2026-11-01. **Produced by AI models** under the direction of the repository owner; see
 [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md).
 
 > [!IMPORTANT]
 > This repository is a public, timestamped, AI-produced **warrant** for $C(17,8,3) = 18$, $C(20,10,3) = 15$ and
 > $C(22,11,3) = 15$ (bounds listed in the La Jolla Covering Repository, Zenodo record 19735294), for the statement on
-> the family $C(2m,m,3)$ in `family/`, and for the coverings in `upper/`: machine-checked arguments that no human has
+> the family $C(2m,m,3)$ in `family/`, for the computation on $C(18,9,3)$ in `m9/` (whose proofs were not kept, so its
+> evidence is weaker; see `m9/README.md`), and for the coverings in `upper/`: machine-checked arguments that no human has
 > yet digested. We do not regard these questions as settled by it. Independent verification and human-readable
 > expositions are welcome, and credit for a human-readable proof belongs to whoever writes one. To refer to the
 > computational results, please cite the archived repository
@@ -65,6 +66,15 @@ intersecting families of 7-subsets of a 14-set. The Key Lemma is checked by comp
 with a DRAT proof. `family/verify_kl.sh` re-checks everything from scratch (about 80 CPU minutes; tools via
 `$SAT_TOOLS` as above; `--full` also re-checks the direct $m = 9$ proof). Reviews of the argument and of the
 certificates are in `family/audit/`. The cases $m = 10, 11$ are also covered by the independent computations above.
+For $m = 9$ this argument gives only $15 \le C(18,9,3) \le 16$.
+
+## The case $C(18,9,3)$ (`m9/`, added 2026-11-01)
+
+The La Jolla Covering Repository lists $14 \le C(18,9,3) \le 16$. `m9/` describes a computation that finds no covering
+with 15 blocks: a written reduction to 1380 CNF formulas, each recorded as unsatisfiable. Together with a 16-block covering
+this indicates $C(18,9,3) = 16$. **The evidence is weaker than for the results above.** The proofs were checked and then
+deleted, so `m9/runs/` holds records of those checks rather than certificates a reader can check; 20 of the cases have no
+proof hashes; two cases are being re-run; and only AI systems have reviewed the work. `m9/README.md` sets out what was checked and what was not.
 
 ## New upper bounds (`upper/`, added 2026-09-30)
 
@@ -76,7 +86,8 @@ $C(76,16,3) \le 156$ (167) and $C(95,20,3) \le 155$ (160), added 2026-10-07. See
 ## Archive
 
 Release v3 is archived at Zenodo: [doi:10.5281/zenodo.23218565](https://doi.org/10.5281/zenodo.23218565)
-(all versions: [doi:10.5281/zenodo.23063929](https://doi.org/10.5281/zenodo.23063929)).
+(all versions: [doi:10.5281/zenodo.23063929](https://doi.org/10.5281/zenodo.23063929)). `m9/` was added after release v3
+and is not in that archive.
 
 ## Figures
 
@@ -120,6 +131,7 @@ Per-formula CaDiCaL solve time and DRAT proof size, from `runs/*/results.jsonl`.
 | `coverings/C22_11_3_b15.txt` | a 15-block $(22,11,3)$ covering |
 | `figures/` | figures and the script that makes them |
 | `family/` | the $C(2m,m,3)$ argument, Key Lemma certificates, verifier, coverings, reviews |
+| `m9/` | the $C(18,9,3)$ computation: generator, case list, run records (no proofs), controls, reviews |
 | `upper/` | new coverings from weighted blow-ups (9 parameter sets), scans, builder, review |
 | `LICENSE` | Apache License 2.0 |
 | `MANIFEST.sha256` | sha256 of every file |
