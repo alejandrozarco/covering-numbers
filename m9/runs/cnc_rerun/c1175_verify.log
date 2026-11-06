@@ -1,0 +1,5 @@
+COVER: 2514 UNSAT leaves with proof files + 0 already-verified leaves (proofs deleted) | 0 gaps | 0 SAT
+TREE CLOSED: every leaf of the cube tree on disk has a checked UNSAT verdict (this alone does NOT show the cubes cover the space).
+COVER VERIFIED: negation of all 2514 leaves is UNSAT with a checked LRAT proof.
+0 leaves already verified; 2514 to check
+PROOFS: 2514 VERIFIED, 0 FAILED (of 2514 checked, mode --check-all)

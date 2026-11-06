@@ -1,0 +1,17 @@
+{
+ "links_sha256": "6097153925757aa3e3d0a38e41d239895f7f4a91e77c66a283067e361751b296",
+ "classes": 312,
+ "solutions": 28017,
+ "classes_hit": 312,
+ "missing_classes": [],
+ "cnf_sha256": "e73dbeb9b052e5722b2c3a081f8dfd08256213708c17764db47a2cd11c08d6c3",
+ "lrat_sha256": "702c0cabc16a1df7c2d40bb5df66b303560db3c7ed54da46ec5e3ab377268127",
+ "lrat_bytes": 902758730,
+ "unsat": true,
+ "lrat_check": true,
+ "cake_lpr": true,
+ "pysat_totalizer_solutions": 28017,
+ "isomorphisms_sha256": "0e455de319336d83b248368c6a8ff2edde663ea622f77cdc3b070104d350fbe5",
+ "complete": true,
+ "seconds": 2609
+}

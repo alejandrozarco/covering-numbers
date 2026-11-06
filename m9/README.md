@@ -13,12 +13,17 @@ here finds no $(18,9,3)$ covering with 15 blocks. Together with the 16-block cov
 - **The proofs were not kept.** They total more than a terabyte, and were deleted after checking. A reader cannot check our
   proofs directly: the files in `runs/` record that the checkers ran and what they reported. Those records were
   written by AI-authored scripts.
-- **No proof hashes for 20 cases.** The 1360 single-proof cases have a recorded SHA-256 for each proof. The 20 cases
-  that rest only on cube-and-conquer record verdicts per sub-problem but no proof hashes.
-- **Two cases are being re-run.** Part of the sub-problem checks for cases 1175 and 1376 came from runs that were
-  interrupted and resumed, with a verifier later found to accept stale results (below). The logs show every sub-problem checked and
-  none failed, but the link between log and proof is not as tight for those two. As of 2026-11-01 both are being re-run
-  with the corrected verifier; this has not finished.
+- **No proof hashes for 18 cases.** The 1360 single-proof cases have a recorded SHA-256 for each proof. Of the 20 cases
+  that rest only on cube-and-conquer, 18 record verdicts per sub-problem but no proof hashes; the re-runs of 1175 and 1376
+  (below) record a SHA-256 for every sub-problem proof.
+- **Two cases were re-run.** Part of the sub-problem checks for cases 1175 and 1376 came from runs that were
+  interrupted and resumed, with a verifier later found to accept stale results (below). Both were re-run from scratch with the
+  corrected verifier (finished 2026-11-06, `runs/E_cnc_rerun.jsonl`): same formulas and same top-level cubes as the first run,
+  every sub-problem unsatisfiable with a proof checked by lrat-trim, lrat-check and cake_lpr (1175: 2514 of 2514; 1376: 2440
+  of 2440), and the cover check passed. Each record binds the checker rows to the formula, cube and proof hashes
+  (`runs/cnc_rerun/`). The 1376 verifier stopped once for an unknown reason (no memory kill, no reboot) and was resumed;
+  the resumed run accepted only rows bound to the same formula and cube, and checked the other 249 sub-problems
+  (`runs/cnc_rerun/c1376_verify_run1.log`, `c1376_verify.log`). The proofs were deleted after checking.
 - **Only AI systems have reviewed this.** See Reviews.
 - **The reduction is a written, unformalised argument**, and each CNF is trusted to encode what its generator says.
 
@@ -50,6 +55,7 @@ timed-out runs and failed-check records; a case counts only through a record wit
 |---|---|---|
 | Regenerate all 1380 CNFs, compare with recorded hashes (`regen_hashes.py`) | 1380 of 1380 match (`audit/m9_regen_hashes.jsonl`) | shows the formulas, not their correctness |
 | Second enumeration of the 312 classes with nauty's `genbg` | same 312 classes, matched by canonical form, same automorphism orders (`audit/links_17_8_genbg.json`) | both use nauty |
+| SAT certificate that the 312 classes are complete (`link_cert.py`), added 2026-11-06 | 28 017 link matrices with rows and columns in decreasing lex order; each mapped to a listed class by an isomorphism checked in plain code (312 of 312 classes hit); with all 28 017 excluded the formula is unsatisfiable, proof checked by lrat-check and cake_lpr; a second encoding gives the same count (`audit/m9_linkcert/`) | rests on the encoding of a link as a 17×7 matrix and on the written double-lex argument; the 0.9 GB proof is not kept, but CaDiCaL regenerated it byte-identically (macOS arm64) |
 | Solve and check 40 random cases again from scratch | all unsatisfiable, all checks pass, all 40 proofs byte-identical to the recorded hashes (`audit/m9_replay.jsonl`) | 40 quick cases, DRAT, macOS arm64; hard cases and Linux builds not tested |
 | Near-coverings run through the reduction's choices into their exact case formula (`control_e2e.py`) | 86 objects, 0 failures; 16 of 16 injected over-constraining errors detected (`audit/m9_control_e2e.json`) | uneven: 24 of 1380 cases, 3 objects with orbit exclusion, 2 of root type $4^5$, none with trivial stabiliser |
 | Leaf logs of all 22 cube-and-conquer runs | 51 530 sub-problems, none failed, none missing | logs only |
@@ -65,7 +71,7 @@ AI reviews, not peer review. Each was run independently of the agents that did t
   1. `verify_cnc.py` skipped failed leaves on restart: corrected; `cnc/test_verify_cnc.sh` is the regression test.
   2. Stored leaf results were not bound to their formula, cube and proof: corrected for new runs; see Limits.
   3. The controls were weak: `control_e2e.py` added; see its limits above.
-  4. The 312-class enumeration had no independent confirmation: `genbg` added.
+  4. The 312-class enumeration had no independent confirmation: `genbg` added, and later a SAT certificate of completeness.
 - Claude Fable 5.1 (`audit/fable_m9_report.md`), written before reading the first review, after findings 1, 2 and 4 had been addressed: verdict SOUND
   for the reduction, case split and formulas, with the 1380 verdicts resting on the records. It did not check any proof.
 
@@ -84,6 +90,7 @@ python3 regen_hashes.py hashes.jsonl /tmp/m9regen                     # 1380 CNF
 python3 control_e2e.py out.json /tmp/m9ctl ./sa_ext 150 --mutants     # 1 to 2 hours
 python3 run9.py replay.jsonl 2,13,53 --proof --timeout 1200           # compare drat_sha256 with runs/*.jsonl
 cnc/test_verify_cnc.sh                                                # verifier regression test
+python3 link_cert.py /tmp/m9linkcert                                   # completeness of the 312 classes, about 45 minutes
 ```
 
 `cnc/cnc_hard.sh` and `cnc/resume_verify.sh` were written for one server, and their paths need editing.

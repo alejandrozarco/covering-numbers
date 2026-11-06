@@ -73,8 +73,8 @@ For $m = 9$ this argument gives only $15 \le C(18,9,3) \le 16$.
 The La Jolla Covering Repository lists $14 \le C(18,9,3) \le 16$. `m9/` describes a computation that finds no covering
 with 15 blocks: a written reduction to 1380 CNF formulas, each recorded as unsatisfiable. Together with a 16-block covering
 this indicates $C(18,9,3) = 16$. **The evidence is weaker than for the results above.** The proofs were checked and then
-deleted, so `m9/runs/` holds records of those checks rather than certificates a reader can check; 20 of the cases have no
-proof hashes; two cases are being re-run; and only AI systems have reviewed the work. `m9/README.md` sets out what was checked and what was not.
+deleted, so `m9/runs/` holds records of those checks rather than certificates a reader can check; 18 of the cases have no
+proof hashes; and only AI systems have reviewed the work. `m9/README.md` sets out what was checked and what was not.
 
 ## New upper bounds (`upper/`, added 2026-09-30)
 
