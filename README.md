@@ -85,9 +85,11 @@ $C(76,16,3) \le 156$ (167) and $C(95,20,3) \le 155$ (160), added 2026-10-07. See
 
 ## Archive
 
-Release v4 is archived at Zenodo: [doi:10.5281/zenodo.23860911](https://doi.org/10.5281/zenodo.23860911)
-(all versions: [doi:10.5281/zenodo.23063929](https://doi.org/10.5281/zenodo.23063929)). `m9/` first appears in release v4
-(2026-11-01). Earlier release: v3, [doi:10.5281/zenodo.23218565](https://doi.org/10.5281/zenodo.23218565).
+Release v5 is archived at Zenodo: [doi:10.5281/zenodo.24020150](https://doi.org/10.5281/zenodo.24020150)
+(all versions: [doi:10.5281/zenodo.23063929](https://doi.org/10.5281/zenodo.23063929)). v5 (2026-11-06) adds the finished
+re-runs of cases 1175 and 1376 and the link-list completeness certificate to `m9/`, which first appears in release v4
+(2026-11-01), [doi:10.5281/zenodo.23860911](https://doi.org/10.5281/zenodo.23860911). Earlier release: v3,
+[doi:10.5281/zenodo.23218565](https://doi.org/10.5281/zenodo.23218565).
 
 ## Figures
 
