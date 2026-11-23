@@ -43,3 +43,29 @@ python3 scripts/check_covering.py 64 14 3 upper/C64_14_3_b156.txt
 python3 scripts/check_covering.py 76 16 3 upper/C76_16_3_b156.txt
 python3 scripts/check_covering.py 95 20 3 upper/C95_20_3_b155.txt
 ```
+
+## Other results for these cells (read 2026-11-23)
+
+coveringrepository.com, values listed on 2026-11-23 (the tables above give the values listed on 2026-09-30 and 2026-10-07):
+
+| cell | here | listed 2026-11-23 | listed by, date shown |
+|---|---|---|---|
+| C(45,23,5) | 63 | 63 | Tianyi Z., 23/11/2026 |
+| C(44,24,6) | 126 | 124 | Tianyi Z., 23/11/2026 |
+| C(54,19,4) | 121 | 116 | construction from (55,19,4), 08/10/2026 |
+| C(55,19,4) | 121 | 116 | F. Atzeni, 08/10/2026 |
+| C(65,23,4) | 121 | 116 | Tianyi Z., 23/11/2026 |
+| C(69,24,4) | 121 | 119 | Tianyi Z., 23/11/2026 |
+| C(64,14,3) | 156 | 162 | F. Atzeni, 25/08/2025 |
+| C(76,16,3) | 156 | 166 | Tianyi Z., 23/11/2026 |
+| C(95,20,3) | 155 | 160 | J. de Heer, S. Muir, 05/11/2014 |
+
+The coverings in this directory have not been submitted to coveringrepository.com.
+
+IRSI ([irsi.ai/tables.html](https://irsi.ai/tables.html)) lists C(45,23,5) ≤ 63 and C(65,23,4) ≤ 125 among 31 covering
+designs, with certificates in `irsi-certificates-2026-09-25.zip` (constructions dated 23–30 September 2026, compared
+with the repository archive of 25 September 2026). C(45,23,5) ≤ 63 was added to this directory on 2026-09-30, from the
+scan described above, which compared only with LJCR v1.2.
+
+Quantavane ([quantavane.com/results/coverings](https://quantavane.com/results/coverings/)) lists 132 coverings; none
+of them is one of the nine cells above.
